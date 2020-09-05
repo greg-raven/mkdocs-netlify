@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to my Netlify Pilot docs
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
