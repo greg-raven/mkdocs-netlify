@@ -3,6 +3,5 @@ site_description: Quick access to answers to FAQs
 site_author: Greg Raven
 site_url: https://netlify-pilot.netlify.app
 nav:
-    - Home: '/'
     - 'DNS': '/dns/'
     - 'Troubleshooting': '/troubleshooting/'
