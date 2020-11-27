@@ -1,27 +1,12 @@
 # DNS set-up
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
 ## Comprehensive domain check for sites with Netlify DNS
 
 ```
 #!/bin/sh
-# View the DNS information: -t A, -t Any, -t NS, -t MX, etc.
-# add +short for super-abbreviated responses
+# View domain and DNS information for Netlify sites
+# change the values for domain and fqdn and run from the command line
+# you may need to install some components using Homebrew
 printf '\e[8;70;100t'
 domain="greg-raven.us"
 fqdn="www.greg-raven.us"
