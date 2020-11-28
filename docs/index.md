@@ -1,17 +1,11 @@
 # Welcome to my Netlify Pilot docs
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+* For full documentation visit [Netlify|Docs](https://docs.netlify.com).
 
-## Commands
+Netlify is the fastest way to build the fastest web sites using the [JAMStack](https://jamstack.org) approach.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Millions of developers and businesses use Netlify to run web projects on a global scale &mdash; without servers, devops, or costly infrastructure.
 
-## Project layout
+Best of all, you can get started in seconds.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+If you don&rsquo;t already have a Netlify account, [click here to get started for free](https://app.netlify.com/signup).

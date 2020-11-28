@@ -1,6 +1,6 @@
 # Troubleshooting
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+* For full documentation visit [Netlify|Docs](https://docs.netlify.com).
 
 ## Commands
 
