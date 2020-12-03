@@ -1,6 +1,7 @@
 # DNS set-up
 
 * For full documentation visit [Netlify|Docs](https://docs.netlify.com).
+* For support visit [Netlify|Community](https://community.netlify.com).
 
 ## Configure external DNS for a custom domain
 

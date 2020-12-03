@@ -1,6 +1,7 @@
 # Welcome to my Netlify Pilot docs
 
 * For full documentation visit [Netlify|Docs](https://docs.netlify.com).
+* For support visit [Netlify|Community](https://community.netlify.com).
 
 ## What is Netlify?
 

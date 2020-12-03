@@ -1,6 +1,7 @@
 # Troubleshooting
 
 * For full documentation visit [Netlify|Docs](https://docs.netlify.com).
+* For support visit [Netlify|Community](https://community.netlify.com).
 
 ## Comprehensive domain check for sites with Netlify DNS
 
