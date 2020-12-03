@@ -5,7 +5,7 @@
 
 ## What is Netlify?
 
-Netlify is the fastest way to build the fastest web sites using the [JAMStack](https://jamstack.org) approach.
+[Netlify](https://www.netlify.com) is the fastest way to build and host the fastest web sites using the modern [JAMStack](https://jamstack.org) approach.
 
 Millions of developers and businesses use Netlify to run web projects on a global scale &mdash; without servers, devops, or costly infrastructure. After building your site, Netlify pushes your files to its global CDN for nearly instantaneous access anywhere on the planet.
 
@@ -20,3 +20,7 @@ Netlify has a great support resource called the [Netlify Community](https://comm
 ## About me
 
 I am not affiliated with Netlify, I am just a user.
+
+## Netlify Next.js demo site
+
+<https://chicag0tribune.netlify.app/news/clever-slave-girl-frees-trapped-seamen>
