@@ -20,7 +20,3 @@ Netlify has a great support resource called the [Netlify Community](https://comm
 ## About me
 
 I am not affiliated with Netlify, I am just a user.
-
-## Netlify Next.js demo site
-
-<https://chicag0tribune.netlify.app/news/clever-slave-girl-frees-trapped-seamen>
