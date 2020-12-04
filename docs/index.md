@@ -9,7 +9,7 @@
 
 Millions of developers and businesses use Netlify to run web projects on a global scale &mdash; without servers, devops, or costly infrastructure. After building your site, Netlify pushes your files to its global CDN for nearly instantaneous access anywhere on the planet.
 
-Best of all, you can get started in seconds for free.
+Best of all, you can get started in seconds for free &hellip; and by “started” I mean that your site(s) will be available on the Internet to anyone with a browser in under a minute.
 
 If you don&rsquo;t already have a Netlify account, [click here to get started for free](https://app.netlify.com/signup).
 
