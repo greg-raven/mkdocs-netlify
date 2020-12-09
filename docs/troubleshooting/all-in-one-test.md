@@ -373,10 +373,6 @@ Registrar URL: http://www.namecheap.com
 
 |===================== whois name server for ====================
 | ----------------------- gregraven.info -----------------------
-Name Server: DNS1.P04.NSONE.NET
-Name Server: DNS2.P04.NSONE.NET
-Name Server: DNS3.P04.NSONE.NET
-Name Server: DNS4.P04.NSONE.NET
 Name Server: dns1.p04.nsone.net
 Name Server: dns2.p04.nsone.net
 Name Server: dns3.p04.nsone.net

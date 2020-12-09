@@ -5,7 +5,7 @@
 
 ## Configure external DNS for a custom domain
 
-Point your apex (bare) domain at the Netlify load balance IP address: 104.198.14.52
+Point your apex (bare) domain at the Netlify load balancer IP address: 104.198.14.52
 
 Point your www subdomain at the Netlify subdomain of your website.
 

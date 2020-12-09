@@ -12,9 +12,7 @@ This utility scans the whois report for the apex domain for information about th
 ```
 #!/bin/sh
 apex="greg-raven.us"
-fqdn="www.greg-raven.us"
-registrar="Registrar URL"
-whois $apex | grep "$registrar"
+whois $apex | grep "Registrar URL"
 ```
 
 **Note:** Because not every whois query returns information in the same format, any blank whois query should be checked by viewing the full whois report.
