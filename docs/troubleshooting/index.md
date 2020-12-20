@@ -213,3 +213,5 @@ sslscan $fqdn
 ```
 
 **Note:** You may have to install the sslscan command-line utility. MacOS users may install it using [Homebrew](https://brew.sh).
+
+## [How to fix the DNS_PROBE_FINISHED_NXDOMAIN error](/troubleshooting/dns_probe_finished_nxdomain.html)
