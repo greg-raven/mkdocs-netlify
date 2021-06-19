@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
 <!-- #bbinclude "meta.incl" -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-<link href="/_assets/css/pilot.css" rel="stylesheet">
-<meta name="author" content="Greg Raven">
-<link rel="icon" href="/_assets/siteicons/favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link href="/_assets/css/pilot.css" rel="stylesheet">
+	<meta name="author" content="Greg Raven">
+	<link rel="icon" href="/_assets/siteicons/favicon.ico">
 <!-- end bbinclude -->
-<h1>All-in-one domain testing utility</h1>
-
+	<title>All-in-one domain testing utility</title>
+</head>
+<body>
+<h1>
+	All-in-one domain testing utility
+</h1>
 <ul>
-<li>For full documentation visit <a href="https://docs.netlify.com">Netlify|Docs</a>.</li>
-<li>For support visit <a href="https://community.netlify.com">Netlify|Community</a>.</li>
+	<li>For full documentation visit <a href="https://docs.netlify.com">Netlify|Docs</a>.</li>
+	<li>For support visit <a href="https://community.netlify.com">Netlify|Community</a>.</li>
 </ul>
-
-<h2>Sample results with external DNS</h2>
-
+<h2>
+	Sample results with external DNS
+</h2>
 <pre><code>
 |============== Check domain info for Netlify sites =============
 
@@ -127,14 +131,15 @@ Vary: Accept-Encoding
 X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585</p>
 
 <p><!DOCTYPE html>
-<html lang="en">
+
+	<html lang="en">
     <head>
         &hellip;
     </head>
     <body class="homepage">
         &hellip;
     </body>
-</html></p>
+	</html></p>
 
 |====================== httpstat check for ======================
 | ------------------------ greg-raven.us ------------------------
@@ -345,10 +350,11 @@ Saving session...
 ...completed.</p>
 
 <p>[Process completed]
-</code></pre>
-
-<h2>Sample results with Netlify</h2>
-
+	</code>
+</pre>
+<h2>
+	Sample results with Netlify
+</h2>
 <pre><code>
 |============== Check domain info for Netlify sites =============
 
@@ -547,18 +553,18 @@ TLSv1.3   enabled
 TLS Fallback SCSV:
 Server supports TLS Fallback SCSV
 
-<p>TLS renegotiation:
+	<p>TLS renegotiation:
 Session renegotiation not supported</p>
 
-<p>TLS Compression:
+	<p>TLS Compression:
 OpenSSL version does not support compression
 Rebuild with zlib1g-dev package for zlib support</p>
 
-<p>Heartbleed:
+	<p>Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
 TLSv1.2 not vulnerable to heartbleed</p>
 
-<p>Supported Server Cipher(s):
+	<p>Supported Server Cipher(s):
 Preferred TLSv1.3  256 bits  TLS<i>AES</i>256<i>GCM</i>SHA384        Curve 25519 DHE 253
 Accepted  TLSv1.3  256 bits  TLS<i>CHACHA20</i>POLY1305<i>SHA256  Curve 25519 DHE 253
 Accepted  TLSv1.3  128 bits  TLS</i>AES<i>128</i>GCM_SHA256        Curve 25519 DHE 253
@@ -570,7 +576,7 @@ Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
 
-<p>Server Key Exchange Group(s):
+	<p>Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -582,7 +588,7 @@ TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
 TLSv1.2  224 bits  x448</p>
 
-<p>Server Signature Algorithm(s):
+	<p>Server Signature Algorithm(s):
 TLSv1.3  rsa<i>pss</i>rsae<i>sha256
 TLSv1.3  rsa</i>pss<i>rsae</i>sha384
 TLSv1.3  rsa<i>pss</i>rsae<i>sha512
@@ -594,15 +600,15 @@ TLSv1.2  rsa</i>pss<i>rsae</i>sha256
 TLSv1.2  rsa<i>pss</i>rsae<i>sha384
 TLSv1.2  rsa</i>pss<i>rsae</i>sha512</p>
 
-<p>SSL Certificate:
+	<p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
 RSA Key Strength:    2048</p>
 
-<p>Subject:  <i>.gregraven.info
+	<p>Subject:  <i>.gregraven.info
 Altnames: DNS:</i>.gregraven.info, DNS:gregraven.info
 Issuer:   Let's Encrypt Authority X3</p>
 
-<p>Not valid before: Nov 18 00:07:05 2020 GMT
+	<p>Not valid before: Nov 18 00:07:05 2020 GMT
 Not valid after:  Feb 16 00:07:05 2021 GMT</p>
 
 | --------------------- www.gregraven.info ---------------------
@@ -635,7 +641,7 @@ Rebuild with zlib1g-dev package for zlib support</p>
 TLSv1.3 not vulnerable to heartbleed
 TLSv1.2 not vulnerable to heartbleed</p>
 
-<p>Supported Server Cipher(s):
+Supported Server Cipher(s):
 Preferred TLSv1.3  256 bits  TLS<i>AES</i>256<i>GCM</i>SHA384        Curve 25519 DHE 253
 Accepted  TLSv1.3  256 bits  TLS<i>CHACHA20</i>POLY1305<i>SHA256  Curve 25519 DHE 253
 Accepted  TLSv1.3  128 bits  TLS</i>AES<i>128</i>GCM_SHA256        Curve 25519 DHE 253
@@ -645,9 +651,9 @@ Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
 
-<p>Server Key Exchange Group(s):
+Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -657,9 +663,9 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448</p>
+TLSv1.2  224 bits  x448
 
-<p>Server Signature Algorithm(s):
+Server Signature Algorithm(s):
 TLSv1.3  rsa<i>pss</i>rsae<i>sha256
 TLSv1.3  rsa</i>pss<i>rsae</i>sha384
 TLSv1.3  rsa<i>pss</i>rsae<i>sha512
@@ -669,7 +675,7 @@ TLSv1.2  rsa</i>pkcs1<i>sha384
 TLSv1.2  rsa</i>pkcs1<i>sha512
 TLSv1.2  rsa</i>pss<i>rsae</i>sha256
 TLSv1.2  rsa<i>pss</i>rsae<i>sha384
-TLSv1.2  rsa</i>pss<i>rsae</i>sha512</p>
+TLSv1.2  rsa</i>pss<i>rsae</i>sha512
 
 <p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
@@ -679,25 +685,28 @@ RSA Key Strength:    2048</p>
 Altnames: DNS:</i>.gregraven.info, DNS:gregraven.info
 Issuer:   Let's Encrypt Authority X3</p>
 
-<p>Not valid before: Nov 18 00:07:05 2020 GMT
+Not valid before: Nov 18 00:07:05 2020 GMT
 Not valid after:  Feb 16 00:07:05 2021 GMT
 Saving session...
 ...copying shared history...
 ...saving history...truncating history files...
-...completed.</p>
+...completed.
 
-<p>[Process completed]
-</code></pre>
+[Process completed]
+</code>
+</pre>
 <!-- #bbinclude "footer.incl" -->
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-	</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+</script>
+</body>
 </html>
 <!-- end bbinclude -->
