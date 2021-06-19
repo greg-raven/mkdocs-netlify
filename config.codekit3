@@ -9,6 +9,40 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/_assets\/css\/pilot.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/css\/pilot-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/_assets\/css\/pilot.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/css\/pilot.css.map",
+      "oF" : 0
+    },
+    "\/_assets\/css\/pilot.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 0,
+      "oAP" : "\/_assets\/css\/pilot.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/_assets\/img\/external-dns.png" : {
       "ft" : 32768,
       "iS" : 21689,
@@ -28,6 +62,118 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/_assets\/img\/favicon.ico",
+      "oF" : 0
+    },
+    "\/_assets\/siteicons\/android-chrome-192x192.png" : {
+      "ft" : 32768,
+      "iS" : 1705,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/android-chrome-192x192.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/android-chrome-512x512.png" : {
+      "ft" : 32768,
+      "iS" : 6448,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/android-chrome-512x512.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 1525,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/browserconfig.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/browserconfig.xml",
+      "oF" : 0
+    },
+    "\/_assets\/siteicons\/favicon-16x16.png" : {
+      "ft" : 32768,
+      "iS" : 228,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/favicon-16x16.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/favicon-32x32.png" : {
+      "ft" : 32768,
+      "iS" : 365,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/favicon-32x32.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/manifest.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/_assets\/siteicons\/manifest-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/_assets\/siteicons\/mstile-150x150.png" : {
+      "ft" : 32768,
+      "iS" : 1241,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/mstile-150x150.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/_assets\/siteicons\/safari-pinned-tab.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/_assets\/siteicons\/safari-pinned-tab.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/_assets\/siteicons\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/site.webmanifest",
       "oF" : 0
     },
     "\/_redirects" : {
@@ -60,6 +206,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/search.html",
+      "oF" : 0
+    },
+    "\/tips\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tips\/index.html",
       "oF" : 0
     },
     "\/troubleshooting\/all-in-one-test.html" : {
@@ -113,7 +267,7 @@
     "creationDate" : 645800015.26793599,
     "displayValue" : "netlify-pilot-build",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-payne",
+    "iconImageName" : "\/_assets\/siteicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
