@@ -18,23 +18,23 @@
 	<div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/index.html">GR</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 		</div>
 <!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="/index.html">Home</a></li>
+				<li><a href="/index.html" title="Home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
 				<li><a href="/dns/index.html">DNS</a></li>
 				<li><a href="/tips/index.html">Tips</a></li>
 				<li class="dropdown"> <a href="/troubleshooting/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Troubleshooting <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a href="/troubleshooting/all-in-one-test.html">All-in-one test</a></li>
-					<li><a href="/troubleshooting/dns_probe_finished_nxdomain.html">DNS Probe Finished NXDomain</a></li>
+					<li><a href="/troubleshooting/dns_probe_finished_nxdomain.html">DNS_Probe_Finished_NXDomain</a></li>
 					<li><a href="/troubleshooting/dns-issues.html">DNS issues</a></li>
 					<li><a href="/troubleshooting/ssl-issues.html">SSL issues</a></li>
 				</ul>
 				</li>
-				<li><a href="/search.html">Search</a></li>
+				<li><a href="/search.html" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
 			</ul>
 		</div>
 <!-- /.navbar-collapse -->
@@ -97,24 +97,24 @@ netlify-pilot.netlify.app.
 
 |================== check for inactive DNS zone =================
 | --------------- last line should show nsone.net ---------------
-;; Received 656 bytes from 156.154.124.70#53(a.cctld.us) in 19 ms</p>
+;; Received 656 bytes from 156.154.124.70#53(a.cctld.us) in 19 ms
 
 <p>greg-raven.us.      1800    IN  NS  dns1.registrar-servers.com.
 greg-raven.us.      1800    IN  NS  dns2.registrar-servers.com.
-;; Received 101 bytes from 156.154.132.200#53(dns1.registrar-servers.com) in 17 ms</p>
+;; Received 101 bytes from 156.154.132.200#53(dns1.registrar-servers.com) in 17 m
 
 |==================== whois check for DNSSEC ====================
 | --------------------- should be unsigned ----------------------
 DNSSEC: unsigned
-DNSSEC: unsigned</p>
+DNSSEC: unsigned
 
 |===================== curl check for server ====================
 | ---------------------- should be Netlify ----------------------
 | ------------------------ greg-raven.us ------------------------
-&lt; Server: Netlify</p>
+&lt; Server: Netlify
 
 | ---------------------- www.greg-raven.us ----------------------
-&lt; Server: Netlify</p>
+&lt; Server: Netlify
 
 |======================== host check for ========================
 | ------------------------ greg-raven.us ------------------------
@@ -123,13 +123,13 @@ greg-raven.us mail is handled by 20 eforward5.registrar-servers.com.
 greg-raven.us mail is handled by 15 eforward4.registrar-servers.com.
 greg-raven.us mail is handled by 10 eforward1.registrar-servers.com.
 greg-raven.us mail is handled by 10 eforward2.registrar-servers.com.
-greg-raven.us mail is handled by 10 eforward3.registrar-servers.com.</p>
+greg-raven.us mail is handled by 10 eforward3.registrar-servers.com.
 
 | ---------------------- www.greg-raven.us ----------------------
 www.greg-raven.us has address 159.65.216.232
 www.greg-raven.us has address 104.248.50.87
 www.greg-raven.us has IPv6 address 2604:a880:400:d1::888:7001
-www.greg-raven.us has IPv6 address 2604:a880:400:d1::89c:7001</p>
+www.greg-raven.us has IPv6 address 2604:a880:400:d1::89c:7001
 
 |======================== https check for =======================
 | ------------------------ greg-raven.us ------------------------
@@ -143,9 +143,9 @@ Date: Sat, 05 Dec 2020 12:25:02 GMT
 Location: https://www.greg-raven.us/
 Server: Netlify
 Strict-Transport-Security: max-age=31536000
-X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31648910</p>
+X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31648910
 
-<p>Redirecting to https://www.greg-raven.us/</p>
+Redirecting to https://www.greg-raven.us/
 
 | ---------------------- www.greg-raven.us ----------------------
 HTTP/1.1 200 OK
@@ -160,24 +160,13 @@ Server: Netlify
 Strict-Transport-Security: max-age=31536000
 Transfer-Encoding: chunked
 Vary: Accept-Encoding
-X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585</p>
-
-<p><!DOCTYPE html>
-
-	<html lang="en">
-    <head>
-        &hellip;
-    </head>
-    <body class="homepage">
-        &hellip;
-    </body>
-	</html></p>
+X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585
 
 |====================== httpstat check for ======================
 | ------------------------ greg-raven.us ------------------------
-Connected to 104.198.14.52:80 from 192.168.1.9:62150</p>
+Connected to 104.198.14.52:80 from 192.168.1.9:62150
 
-<p>HTTP/1.1 301 Moved Permanently
+HTTP/1.1 301 Moved Permanently
 Cache-Control: public, max-age=0, must-revalidate
 Content-Length: 38
 Content-Type: text/plain
@@ -186,22 +175,22 @@ Location: https://greg-raven.us/
 Age: 27254
 Connection: keep-alive
 Server: Netlify
-X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31649296</p>
+X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31649296
 
-<p>Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpPICmJc</p>
+Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpPICmJc
 
-<p>DNS Lookup   TCP Connection   Server Processing   Content Transfer
+DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      49ms      |       53ms        |        1ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:51ms              |                  |
                                       starttransfer:104ms            |
-                                                                 total:105ms</p>
+                                                                 total:105ms
 
 | ---------------------- www.greg-raven.us ----------------------
-Connected to 159.65.216.232:80 from 192.168.1.9:62151</p>
+Connected to 159.65.216.232:80 from 192.168.1.9:62151
 
-<p>HTTP/1.1 301 Moved Permanently
+HTTP/1.1 301 Moved Permanently
 Cache-Control: public, max-age=0, must-revalidate
 Content-Length: 42
 Content-Type: text/plain
@@ -210,50 +199,50 @@ Location: https://www.greg-raven.us/
 Age: 2
 Connection: keep-alive
 Server: Netlify
-X-NF-Request-ID: ac4acee9-ff14-4f47-9622-8f41c6ee93bc-6393200</p>
+X-NF-Request-ID: ac4acee9-ff14-4f47-9622-8f41c6ee93bc-6393200
 
-<p>Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpzUDURs</p>
+Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpzUDURs
 
-<p>DNS Lookup   TCP Connection   Server Processing   Content Transfer
+DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      91ms      |       97ms        |        0ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:93ms              |                  |
                                       starttransfer:190ms            |
-                                                                 total:190ms</p>
+                                                                 total:190ms
 
 |================== check SSL certificate dates =================
 | ------------------------ greg-raven.us ------------------------
 Version: 2.0.6-static
-OpenSSL 1.1.1h  22 Sep 2020</p>
+OpenSSL 1.1.1h  22 Sep 2020
 
-<p>Connected to 104.198.14.52</p>
+Connected to 104.198.14.52
 
-<p>Testing SSL server greg-raven.us on port 443 using SNI name greg-raven.us</p>
+Testing SSL server greg-raven.us on port 443 using SNI name greg-raven.us
 
-<p>SSL/TLS Protocols:
+SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
 TLSv1.1   disabled
 TLSv1.2   enabled
-TLSv1.3   enabled</p>
+TLSv1.3   enabled
 
-<p>TLS Fallback SCSV:
-Server supports TLS Fallback SCSV</p>
+TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
 
-<p>TLS renegotiation:
-Session renegotiation not supported</p>
+TLS renegotiation:
+Session renegotiation not supported
 
-<p>TLS Compression:
+TLS Compression:
 OpenSSL version does not support compression
-Rebuild with zlib1g-dev package for zlib support</p>
+Rebuild with zlib1g-dev package for zlib support
 
-<p>Heartbleed:
+Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
-TLSv1.2 not vulnerable to heartbleed</p>
+TLSv1.2 not vulnerable to heartbleed
 
-<p>Supported Server Cipher(s):
+Supported Server Cipher(s):
 Preferred TLSv1.3  256 bits  TLS<i>AES</i>256<i>GCM</i>SHA384        Curve 25519 DHE 253
 Accepted  TLSv1.3  256 bits  TLS<i>CHACHA20</i>POLY1305<i>SHA256  Curve 25519 DHE 253
 Accepted  TLSv1.3  128 bits  TLS</i>AES<i>128</i>GCM_SHA256        Curve 25519 DHE 253
@@ -263,9 +252,9 @@ Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
 
-<p>Server Key Exchange Group(s):
+Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -275,9 +264,9 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448</p>
+TLSv1.2  224 bits  x448
 
-<p>Server Signature Algorithm(s):
+Server Signature Algorithm(s):
 TLSv1.3  rsa<i>pss</i>rsae<i>sha256
 TLSv1.3  rsa</i>pss<i>rsae</i>sha384
 TLSv1.3  rsa<i>pss</i>rsae<i>sha512
@@ -287,7 +276,7 @@ TLSv1.2  rsa</i>pkcs1<i>sha384
 TLSv1.2  rsa</i>pkcs1<i>sha512
 TLSv1.2  rsa</i>pss<i>rsae</i>sha256
 TLSv1.2  rsa<i>pss</i>rsae<i>sha384
-TLSv1.2  rsa</i>pss<i>rsae</i>sha512</p>
+TLSv1.2  rsa</i>pss<i>rsae</i>sha512
 
 <p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption

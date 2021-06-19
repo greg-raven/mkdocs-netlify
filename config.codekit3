@@ -137,6 +137,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/_assets\/siteicons\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/siteicons\/favicon.ico",
+      "oF" : 0
+    },
     "\/_assets\/siteicons\/manifest.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -200,12 +208,28 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/robots.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/robots.txt",
+      "oF" : 0
+    },
     "\/search.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/search.html",
+      "oF" : 0
+    },
+    "\/sitemap.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sitemap.txt",
       "oF" : 0
     },
     "\/tips\/index.html" : {
