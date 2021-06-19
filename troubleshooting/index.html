@@ -33,7 +33,7 @@ whois $apex | grep "Registrar URL"
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> Because not every whois query returns information in the same format, any blank whois query should be checked by viewing the full whois report.
+		<b>Note:</b> Because not every whois query returns information in the same format, any blank whois query should be checked by viewing the full whois report.
 	</p>
 	<p>
 		Your results should look something like:
@@ -67,7 +67,7 @@ dig $fqdn -t NS +short
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> Because not every whois query returns information in the same format, any blank whois query should be checked by viewing the full whois report.
+		<b>Note:</b> Because not every whois query returns information in the same format, any blank whois query should be checked by viewing the full whois report.
 	</p>
 	<p>
 		If you are using an external name server, your results will look something like this:
@@ -130,7 +130,7 @@ whois "$(dig $fqdn -t A +short)" | grep Organization
 		Check DNS CNAME entry
 	</h2>
 	<p>
-		If you are using Netlify DNS (as opposed to DNS at your registrar or Cloudflare or some other third party), there will be no CNAME entry. If your DNS is <em>not</em> with Netlify, then typically your fqdn (e.g. www.domain.com) will point to your Netlify subdomain (e.g. brave-curie-671954.netlify.app).
+		If you are using Netlify DNS (as opposed to DNS at your registrar or Cloudflare or some other third party), there will be no CNAME entry. If your DNS is <i>not</i> with Netlify, then typically your fqdn (e.g. www.domain.com) will point to your Netlify subdomain (e.g. brave-curie-671954.netlify.app).
 	</p>
 	<pre><code>
 !/bin/sh
@@ -163,7 +163,7 @@ whois $apex | grep "DNSSEC"
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> Unless you have a custom wildcard SSL certificate, the certificate for your apex domain will cover all your subdomains as long as their content is in the same server space.
+		<b>Note:</b> Unless you have a custom wildcard SSL certificate, the certificate for your apex domain will cover all your subdomains as long as their content is in the same server space.
 	</p>
 	<h2>
 		Check server
@@ -207,7 +207,7 @@ https $apex
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> You may have to install the https command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
+		<b>Note:</b> You may have to install the https command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
 	</p>
 	<h2>
 		HTTPStat check
@@ -219,7 +219,7 @@ httpstat $apex
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> You may have to install the httpstat command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
+		<b>Note:</b> You may have to install the httpstat command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
 	</p>
 	<h2>
 		Check SSL
@@ -240,10 +240,10 @@ sslscan $fqdn
 	</code>
 	</pre>
 	<p>
-		<strong>Note:</strong> You may have to install the sslscan command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
+		<b>Note:</b> You may have to install the sslscan command-line utility. MacOS users may install it using <a href="https://brew.sh">Homebrew</a>.
 	</p>
 	<h2>
-		<a href="/troubleshooting/dns_probe_finished_nxdomain.html">How to fix the DNS<em>PROBE</em>FINISHED_NXDOMAIN error</a>
+		<a href="/troubleshooting/dns_probe_finished_nxdomain.html">How to fix the DNS PROBE FINISHED_NXDOMAIN error</a>
 	</h2>
 <!-- #bbinclude "footer.incl" -->
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
