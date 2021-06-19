@@ -1,7 +1,0 @@
-site_name: "My Netlify Pilot docs"
-site_description: "Quick access to answers to FAQs"
-site_author: "Greg Raven"
-site_url: "https://netlify-pilot.netlify.app"
-nav:
-    - 'DNS': '/dns/'
-    - 'Troubleshooting': '/troubleshooting/'

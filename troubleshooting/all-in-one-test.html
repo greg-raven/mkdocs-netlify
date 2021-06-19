@@ -1,11 +1,25 @@
-# All-in-one domain testing utility
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- #bbinclude "meta.incl" -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link href="/_assets/css/pilot.css" rel="stylesheet">
+<meta name="author" content="Greg Raven">
+<link rel="icon" href="/_assets/siteicons/favicon.ico">
+<!-- end bbinclude -->
+<h1>All-in-one domain testing utility</h1>
 
-* For full documentation visit [Netlify|Docs](https://docs.netlify.com).
-* For support visit [Netlify|Community](https://community.netlify.com).
+<ul>
+<li>For full documentation visit <a href="https://docs.netlify.com">Netlify|Docs</a>.</li>
+<li>For support visit <a href="https://community.netlify.com">Netlify|Community</a>.</li>
+</ul>
 
-## Sample results with external DNS
+<h2>Sample results with external DNS</h2>
 
-```
+<pre><code>
 |============== Check domain info for Netlify sites =============
 
 |====================== whois registrar for =====================
@@ -13,16 +27,12 @@
 Registrar URL: http://www.namecheap.com
 Registrar URL: http://www.namecheap.com
 
-
-
 |===================== whois name server for ====================
 | ------------------------ greg-raven.us ------------------------
 Name Server: dns2.registrar-servers.com
 Name Server: dns1.registrar-servers.com
 Name Server: dns1.registrar-servers.com
 Name Server: dns2.registrar-servers.com
-
-
 
 |==================== dig name server(s) for ====================
 | ------------------------ greg-raven.us ------------------------
@@ -32,8 +42,6 @@ dns2.registrar-servers.com.
 
 | ---------------------- www.greg-raven.us ----------------------
 | ------------ blank if pointing to the apex domain -------------
-
-
 
 |====================== dig A record(s) for =====================
 | ------------------------ greg-raven.us ------------------------
@@ -46,41 +54,31 @@ Organization:   Google LLC (GOOGL-2)
 165.227.12.111
 Organization:   DigitalOcean, LLC (DO-13)
 
-
-
 |======================= dig CNAME(s) for =======================
 | ---------------------- www.greg-raven.us ----------------------
 | ---------------- will be blank for Netlify DNS ----------------
 netlify-pilot.netlify.app.
 
-
-
 |================== check for inactive DNS zone =================
 | --------------- last line should show nsone.net ---------------
-;; Received 656 bytes from 156.154.124.70#53(a.cctld.us) in 19 ms
+;; Received 656 bytes from 156.154.124.70#53(a.cctld.us) in 19 ms</p>
 
-greg-raven.us.		1800	IN	NS	dns1.registrar-servers.com.
-greg-raven.us.		1800	IN	NS	dns2.registrar-servers.com.
-;; Received 101 bytes from 156.154.132.200#53(dns1.registrar-servers.com) in 17 ms
-
-
+<p>greg-raven.us.      1800    IN  NS  dns1.registrar-servers.com.
+greg-raven.us.      1800    IN  NS  dns2.registrar-servers.com.
+;; Received 101 bytes from 156.154.132.200#53(dns1.registrar-servers.com) in 17 ms</p>
 
 |==================== whois check for DNSSEC ====================
 | --------------------- should be unsigned ----------------------
 DNSSEC: unsigned
-DNSSEC: unsigned
-
-
+DNSSEC: unsigned</p>
 
 |===================== curl check for server ====================
 | ---------------------- should be Netlify ----------------------
 | ------------------------ greg-raven.us ------------------------
-< Server: Netlify
+&lt; Server: Netlify</p>
 
 | ---------------------- www.greg-raven.us ----------------------
-< Server: Netlify
-
-
+&lt; Server: Netlify</p>
 
 |======================== host check for ========================
 | ------------------------ greg-raven.us ------------------------
@@ -89,15 +87,13 @@ greg-raven.us mail is handled by 20 eforward5.registrar-servers.com.
 greg-raven.us mail is handled by 15 eforward4.registrar-servers.com.
 greg-raven.us mail is handled by 10 eforward1.registrar-servers.com.
 greg-raven.us mail is handled by 10 eforward2.registrar-servers.com.
-greg-raven.us mail is handled by 10 eforward3.registrar-servers.com.
+greg-raven.us mail is handled by 10 eforward3.registrar-servers.com.</p>
 
 | ---------------------- www.greg-raven.us ----------------------
 www.greg-raven.us has address 159.65.216.232
 www.greg-raven.us has address 104.248.50.87
 www.greg-raven.us has IPv6 address 2604:a880:400:d1::888:7001
-www.greg-raven.us has IPv6 address 2604:a880:400:d1::89c:7001
-
-
+www.greg-raven.us has IPv6 address 2604:a880:400:d1::89c:7001</p>
 
 |======================== https check for =======================
 | ------------------------ greg-raven.us ------------------------
@@ -111,11 +107,9 @@ Date: Sat, 05 Dec 2020 12:25:02 GMT
 Location: https://www.greg-raven.us/
 Server: Netlify
 Strict-Transport-Security: max-age=31536000
-X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31648910
+X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31648910</p>
 
-Redirecting to https://www.greg-raven.us/
-
-
+<p>Redirecting to https://www.greg-raven.us/</p>
 
 | ---------------------- www.greg-raven.us ----------------------
 HTTP/1.1 200 OK
@@ -130,9 +124,9 @@ Server: Netlify
 Strict-Transport-Security: max-age=31536000
 Transfer-Encoding: chunked
 Vary: Accept-Encoding
-X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585
+X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585</p>
 
-<!DOCTYPE html>
+<p><!DOCTYPE html>
 <html lang="en">
     <head>
         &hellip;
@@ -140,15 +134,13 @@ X-NF-Request-ID: c395252f-6c4e-414d-8080-ed8a171a9879-63907585
     <body class="homepage">
         &hellip;
     </body>
-</html>
-
-
+</html></p>
 
 |====================== httpstat check for ======================
 | ------------------------ greg-raven.us ------------------------
-Connected to 104.198.14.52:80 from 192.168.1.9:62150
+Connected to 104.198.14.52:80 from 192.168.1.9:62150</p>
 
-HTTP/1.1 301 Moved Permanently
+<p>HTTP/1.1 301 Moved Permanently
 Cache-Control: public, max-age=0, must-revalidate
 Content-Length: 38
 Content-Type: text/plain
@@ -157,24 +149,22 @@ Location: https://greg-raven.us/
 Age: 27254
 Connection: keep-alive
 Server: Netlify
-X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31649296
+X-NF-Request-ID: 1e33d439-3070-41ff-adb5-28dca83c9da3-31649296</p>
 
-Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpPICmJc
+<p>Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpPICmJc</p>
 
-  DNS Lookup   TCP Connection   Server Processing   Content Transfer
+<p>DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      49ms      |       53ms        |        1ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:51ms              |                  |
                                       starttransfer:104ms            |
-                                                                 total:105ms
-
-
+                                                                 total:105ms</p>
 
 | ---------------------- www.greg-raven.us ----------------------
-Connected to 159.65.216.232:80 from 192.168.1.9:62151
+Connected to 159.65.216.232:80 from 192.168.1.9:62151</p>
 
-HTTP/1.1 301 Moved Permanently
+<p>HTTP/1.1 301 Moved Permanently
 Cache-Control: public, max-age=0, must-revalidate
 Content-Length: 42
 Content-Type: text/plain
@@ -183,64 +173,62 @@ Location: https://www.greg-raven.us/
 Age: 2
 Connection: keep-alive
 Server: Netlify
-X-NF-Request-ID: ac4acee9-ff14-4f47-9622-8f41c6ee93bc-6393200
+X-NF-Request-ID: ac4acee9-ff14-4f47-9622-8f41c6ee93bc-6393200</p>
 
-Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpzUDURs
+<p>Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpzUDURs</p>
 
-  DNS Lookup   TCP Connection   Server Processing   Content Transfer
+<p>DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      91ms      |       97ms        |        0ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:93ms              |                  |
                                       starttransfer:190ms            |
-                                                                 total:190ms
-
-
+                                                                 total:190ms</p>
 
 |================== check SSL certificate dates =================
 | ------------------------ greg-raven.us ------------------------
 Version: 2.0.6-static
-OpenSSL 1.1.1h  22 Sep 2020
+OpenSSL 1.1.1h  22 Sep 2020</p>
 
-Connected to 104.198.14.52
+<p>Connected to 104.198.14.52</p>
 
-Testing SSL server greg-raven.us on port 443 using SNI name greg-raven.us
+<p>Testing SSL server greg-raven.us on port 443 using SNI name greg-raven.us</p>
 
-  SSL/TLS Protocols:
+<p>SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
 TLSv1.1   disabled
 TLSv1.2   enabled
-TLSv1.3   enabled
+TLSv1.3   enabled</p>
 
-  TLS Fallback SCSV:
-Server supports TLS Fallback SCSV
+<p>TLS Fallback SCSV:
+Server supports TLS Fallback SCSV</p>
 
-  TLS renegotiation:
-Session renegotiation not supported
+<p>TLS renegotiation:
+Session renegotiation not supported</p>
 
-  TLS Compression:
+<p>TLS Compression:
 OpenSSL version does not support compression
-Rebuild with zlib1g-dev package for zlib support
+Rebuild with zlib1g-dev package for zlib support</p>
 
-  Heartbleed:
+<p>Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
-TLSv1.2 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed</p>
 
-  Supported Server Cipher(s):
-Preferred TLSv1.3  256 bits  TLS_AES_256_GCM_SHA384        Curve 25519 DHE 253
-Accepted  TLSv1.3  256 bits  TLS_CHACHA20_POLY1305_SHA256  Curve 25519 DHE 253
-Accepted  TLSv1.3  128 bits  TLS_AES_128_GCM_SHA256        Curve 25519 DHE 253
+<p>Supported Server Cipher(s):
+Preferred TLSv1.3  256 bits  TLS<em>AES</em>256<em>GCM</em>SHA384        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS<em>CHACHA20</em>POLY1305<em>SHA256  Curve 25519 DHE 253
+Accepted  TLSv1.3  128 bits  TLS</em>AES<em>128</em>GCM_SHA256        Curve 25519 DHE 253
 Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
 
-  Server Key Exchange Group(s):
+<p>Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -250,74 +238,74 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448
+TLSv1.2  224 bits  x448</p>
 
-  Server Signature Algorithm(s):
-TLSv1.3  rsa_pss_rsae_sha256
-TLSv1.3  rsa_pss_rsae_sha384
-TLSv1.3  rsa_pss_rsae_sha512
-TLSv1.2  rsa_pkcs1_sha224
-TLSv1.2  rsa_pkcs1_sha256
-TLSv1.2  rsa_pkcs1_sha384
-TLSv1.2  rsa_pkcs1_sha512
-TLSv1.2  rsa_pss_rsae_sha256
-TLSv1.2  rsa_pss_rsae_sha384
-TLSv1.2  rsa_pss_rsae_sha512
+<p>Server Signature Algorithm(s):
+TLSv1.3  rsa<em>pss</em>rsae<em>sha256
+TLSv1.3  rsa</em>pss<em>rsae</em>sha384
+TLSv1.3  rsa<em>pss</em>rsae<em>sha512
+TLSv1.2  rsa</em>pkcs1<em>sha224
+TLSv1.2  rsa</em>pkcs1<em>sha256
+TLSv1.2  rsa</em>pkcs1<em>sha384
+TLSv1.2  rsa</em>pkcs1<em>sha512
+TLSv1.2  rsa</em>pss<em>rsae</em>sha256
+TLSv1.2  rsa<em>pss</em>rsae<em>sha384
+TLSv1.2  rsa</em>pss<em>rsae</em>sha512</p>
 
-  SSL Certificate:
+<p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
-RSA Key Strength:    2048
+RSA Key Strength:    2048</p>
 
-Subject:  greg-raven.us
+<p>Subject:  greg-raven.us
 Altnames: DNS:greg-raven.us, DNS:www.greg-raven.us
-Issuer:   Let's Encrypt Authority X3
+Issuer:   Let's Encrypt Authority X3</p>
 
-Not valid before: Nov 28 19:00:31 2020 GMT
-Not valid after:  Feb 26 19:00:31 2021 GMT
+<p>Not valid before: Nov 28 19:00:31 2020 GMT
+Not valid after:  Feb 26 19:00:31 2021 GMT</p>
 
 | ---------------------- www.greg-raven.us ----------------------
 Version: 2.0.6-static
-OpenSSL 1.1.1h  22 Sep 2020
+OpenSSL 1.1.1h  22 Sep 2020</p>
 
-Connected to 159.65.216.232
+<p>Connected to 159.65.216.232</p>
 
-Testing SSL server www.greg-raven.us on port 443 using SNI name www.greg-raven.us
+<p>Testing SSL server www.greg-raven.us on port 443 using SNI name www.greg-raven.us</p>
 
-  SSL/TLS Protocols:
+<p>SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
 TLSv1.1   disabled
 TLSv1.2   enabled
-TLSv1.3   enabled
+TLSv1.3   enabled</p>
 
-  TLS Fallback SCSV:
-Server supports TLS Fallback SCSV
+<p>TLS Fallback SCSV:
+Server supports TLS Fallback SCSV</p>
 
-  TLS renegotiation:
-Session renegotiation not supported
+<p>TLS renegotiation:
+Session renegotiation not supported</p>
 
-  TLS Compression:
+<p>TLS Compression:
 OpenSSL version does not support compression
-Rebuild with zlib1g-dev package for zlib support
+Rebuild with zlib1g-dev package for zlib support</p>
 
-  Heartbleed:
+<p>Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
-TLSv1.2 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed</p>
 
-  Supported Server Cipher(s):
-Preferred TLSv1.3  256 bits  TLS_AES_256_GCM_SHA384        Curve 25519 DHE 253
-Accepted  TLSv1.3  256 bits  TLS_CHACHA20_POLY1305_SHA256  Curve 25519 DHE 253
-Accepted  TLSv1.3  128 bits  TLS_AES_128_GCM_SHA256        Curve 25519 DHE 253
+<p>Supported Server Cipher(s):
+Preferred TLSv1.3  256 bits  TLS<em>AES</em>256<em>GCM</em>SHA384        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS<em>CHACHA20</em>POLY1305<em>SHA256  Curve 25519 DHE 253
+Accepted  TLSv1.3  128 bits  TLS</em>AES<em>128</em>GCM_SHA256        Curve 25519 DHE 253
 Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
 
-  Server Key Exchange Group(s):
+<p>Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -327,41 +315,41 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448
+TLSv1.2  224 bits  x448</p>
 
-  Server Signature Algorithm(s):
-TLSv1.3  rsa_pss_rsae_sha256
-TLSv1.3  rsa_pss_rsae_sha384
-TLSv1.3  rsa_pss_rsae_sha512
-TLSv1.2  rsa_pkcs1_sha224
-TLSv1.2  rsa_pkcs1_sha256
-TLSv1.2  rsa_pkcs1_sha384
-TLSv1.2  rsa_pkcs1_sha512
-TLSv1.2  rsa_pss_rsae_sha256
-TLSv1.2  rsa_pss_rsae_sha384
-TLSv1.2  rsa_pss_rsae_sha512
+<p>Server Signature Algorithm(s):
+TLSv1.3  rsa<em>pss</em>rsae<em>sha256
+TLSv1.3  rsa</em>pss<em>rsae</em>sha384
+TLSv1.3  rsa<em>pss</em>rsae<em>sha512
+TLSv1.2  rsa</em>pkcs1<em>sha224
+TLSv1.2  rsa</em>pkcs1<em>sha256
+TLSv1.2  rsa</em>pkcs1<em>sha384
+TLSv1.2  rsa</em>pkcs1<em>sha512
+TLSv1.2  rsa</em>pss<em>rsae</em>sha256
+TLSv1.2  rsa<em>pss</em>rsae<em>sha384
+TLSv1.2  rsa</em>pss<em>rsae</em>sha512</p>
 
-  SSL Certificate:
+<p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
-RSA Key Strength:    2048
+RSA Key Strength:    2048</p>
 
-Subject:  greg-raven.us
+<p>Subject:  greg-raven.us
 Altnames: DNS:greg-raven.us, DNS:www.greg-raven.us
-Issuer:   Let's Encrypt Authority X3
+Issuer:   Let's Encrypt Authority X3</p>
 
-Not valid before: Nov 28 19:00:31 2020 GMT
+<p>Not valid before: Nov 28 19:00:31 2020 GMT
 Not valid after:  Feb 26 19:00:31 2021 GMT
 Saving session...
 ...copying shared history...
 ...saving history...truncating history files...
-...completed.
+...completed.</p>
 
-[Process completed]
-```
+<p>[Process completed]
+</code></pre>
 
-## Sample results with Netlify
+<h2>Sample results with Netlify</h2>
 
-```
+<pre><code>
 |============== Check domain info for Netlify sites =============
 
 |====================== whois registrar for =====================
@@ -369,16 +357,12 @@ Saving session...
 Registrar URL: www.namecheap.com
 Registrar URL: http://www.namecheap.com
 
-
-
 |===================== whois name server for ====================
 | ----------------------- gregraven.info -----------------------
 Name Server: dns1.p04.nsone.net
 Name Server: dns2.p04.nsone.net
 Name Server: dns3.p04.nsone.net
 Name Server: dns4.p04.nsone.net
-
-
 
 |==================== dig name server(s) for ====================
 | ----------------------- gregraven.info -----------------------
@@ -390,8 +374,6 @@ dns1.p04.nsone.net.
 
 | --------------------- www.gregraven.info ---------------------
 | ------------ blank if pointing to the apex domain -------------
-
-
 
 |====================== dig A record(s) for =====================
 | ----------------------- gregraven.info -----------------------
@@ -405,40 +387,30 @@ Organization:   RIPE Network Coordination Centre (RIPE)
 104.248.63.248
 Organization:   DigitalOcean, LLC (DO-13)
 
-
-
 |======================= dig CNAME(s) for =======================
 | --------------------- www.gregraven.info ---------------------
 | ---------------- will be blank for Netlify DNS ----------------
 
-
-
 |================== check for inactive DNS zone =================
 | --------------- last line should show nsone.net ---------------
-gregraven.info.		3600	IN	NS	dns1.p04.nsone.net.
-gregraven.info.		3600	IN	NS	dns2.p04.nsone.net.
-gregraven.info.		3600	IN	NS	dns3.p04.nsone.net.
-gregraven.info.		3600	IN	NS	dns4.p04.nsone.net.
+gregraven.info.     3600    IN  NS  dns1.p04.nsone.net.
+gregraven.info.     3600    IN  NS  dns2.p04.nsone.net.
+gregraven.info.     3600    IN  NS  dns3.p04.nsone.net.
+gregraven.info.     3600    IN  NS  dns4.p04.nsone.net.
 ;; Received 132 bytes from 198.51.44.4#53(dns1.p04.nsone.net) in 15 ms
-
-
 
 |==================== whois check for DNSSEC ====================
 | --------------------- should be unsigned ----------------------
 DNSSEC: unsigned
 DNSSEC: unsigned
 
-
-
 |===================== curl check for server ====================
 | ---------------------- should be Netlify ----------------------
 | ----------------------- gregraven.info -----------------------
-< Server: Netlify
+&lt; Server: Netlify
 
 | --------------------- www.gregraven.info ---------------------
-< Server: Netlify
-
-
+&lt; Server: Netlify
 
 |======================== host check for ========================
 | ----------------------- gregraven.info -----------------------
@@ -454,8 +426,6 @@ www.gregraven.info has address 104.248.60.43
 www.gregraven.info has address 162.243.166.170
 www.gregraven.info has IPv6 address 2604:a880:400:d1::89c:7001
 www.gregraven.info has IPv6 address 2604:a880:400:d1::888:7001
-
-
 
 |======================== https check for =======================
 | ----------------------- gregraven.info -----------------------
@@ -476,9 +446,7 @@ X-Frame-Options: DENY
 X-NF-Request-ID: ccfddf35-9c5d-470f-8af3-5c4aec4d5ff5-6350058
 X-Xss-Protection: 1; mode=block
 
-Redirecting to https://www.gregraven.info/
-
-
+<p>Redirecting to https://www.gregraven.info/
 
 | --------------------- www.gregraven.info ---------------------
 HTTP/1.1 200 OK
@@ -499,18 +467,6 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-NF-Request-ID: 75651deb-69f7-4d40-af9f-862208973cdc-81032901
 X-Xss-Protection: 1; mode=block
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        &hellip;
-    </head>
-    <body class="homepage">
-        &hellip;
-    </body>
-</html>
-
-
 
 |====================== httpstat check for ======================
 | ----------------------- gregraven.info -----------------------
@@ -534,15 +490,13 @@ X-NF-Request-ID: 9681a63c-57b3-415a-9f89-50fba5110aa2-1275969
 
 Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmphrR0cH
 
-  DNS Lookup   TCP Connection   Server Processing   Content Transfer
+DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      23ms      |       29ms        |        0ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:25ms              |                  |
                                       starttransfer:54ms             |
                                                                  total:54ms
-
-
 
 | --------------------- www.gregraven.info ---------------------
 Connected to 104.248.60.43:80 from 192.168.1.9:62537
@@ -565,15 +519,13 @@ X-NF-Request-ID: cf50de2e-ab50-4900-8ad3-72a206c87111-8154309
 
 Body stored in: /var/folders/tn/w17_9wjn5n92wxtm5r6tlcbc0000gp/T/tmpDYsJES
 
-  DNS Lookup   TCP Connection   Server Processing   Content Transfer
+DNS Lookup   TCP Connection   Server Processing   Content Transfer
 [     2ms    |      95ms      |       101ms       |        0ms       ]
              |                |                   |                  |
     namelookup:2ms            |                   |                  |
                         connect:97ms              |                  |
                                       starttransfer:198ms            |
                                                                  total:198ms
-
-
 
 |================== check SSL certificate dates =================
 | ----------------------- gregraven.info -----------------------
@@ -584,7 +536,7 @@ Connected to 165.227.12.111
 
 Testing SSL server gregraven.info on port 443 using SNI name gregraven.info
 
-  SSL/TLS Protocols:
+SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
@@ -592,33 +544,33 @@ TLSv1.1   disabled
 TLSv1.2   enabled
 TLSv1.3   enabled
 
-  TLS Fallback SCSV:
+TLS Fallback SCSV:
 Server supports TLS Fallback SCSV
 
-  TLS renegotiation:
-Session renegotiation not supported
+<p>TLS renegotiation:
+Session renegotiation not supported</p>
 
-  TLS Compression:
+<p>TLS Compression:
 OpenSSL version does not support compression
-Rebuild with zlib1g-dev package for zlib support
+Rebuild with zlib1g-dev package for zlib support</p>
 
-  Heartbleed:
+<p>Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
-TLSv1.2 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed</p>
 
-  Supported Server Cipher(s):
-Preferred TLSv1.3  256 bits  TLS_AES_256_GCM_SHA384        Curve 25519 DHE 253
-Accepted  TLSv1.3  256 bits  TLS_CHACHA20_POLY1305_SHA256  Curve 25519 DHE 253
-Accepted  TLSv1.3  128 bits  TLS_AES_128_GCM_SHA256        Curve 25519 DHE 253
+<p>Supported Server Cipher(s):
+Preferred TLSv1.3  256 bits  TLS<em>AES</em>256<em>GCM</em>SHA384        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS<em>CHACHA20</em>POLY1305<em>SHA256  Curve 25519 DHE 253
+Accepted  TLSv1.3  128 bits  TLS</em>AES<em>128</em>GCM_SHA256        Curve 25519 DHE 253
 Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
 
-  Server Key Exchange Group(s):
+<p>Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -628,74 +580,74 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448
+TLSv1.2  224 bits  x448</p>
 
-  Server Signature Algorithm(s):
-TLSv1.3  rsa_pss_rsae_sha256
-TLSv1.3  rsa_pss_rsae_sha384
-TLSv1.3  rsa_pss_rsae_sha512
-TLSv1.2  rsa_pkcs1_sha224
-TLSv1.2  rsa_pkcs1_sha256
-TLSv1.2  rsa_pkcs1_sha384
-TLSv1.2  rsa_pkcs1_sha512
-TLSv1.2  rsa_pss_rsae_sha256
-TLSv1.2  rsa_pss_rsae_sha384
-TLSv1.2  rsa_pss_rsae_sha512
+<p>Server Signature Algorithm(s):
+TLSv1.3  rsa<em>pss</em>rsae<em>sha256
+TLSv1.3  rsa</em>pss<em>rsae</em>sha384
+TLSv1.3  rsa<em>pss</em>rsae<em>sha512
+TLSv1.2  rsa</em>pkcs1<em>sha224
+TLSv1.2  rsa</em>pkcs1<em>sha256
+TLSv1.2  rsa</em>pkcs1<em>sha384
+TLSv1.2  rsa</em>pkcs1<em>sha512
+TLSv1.2  rsa</em>pss<em>rsae</em>sha256
+TLSv1.2  rsa<em>pss</em>rsae<em>sha384
+TLSv1.2  rsa</em>pss<em>rsae</em>sha512</p>
 
-  SSL Certificate:
+<p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
-RSA Key Strength:    2048
+RSA Key Strength:    2048</p>
 
-Subject:  *.gregraven.info
-Altnames: DNS:*.gregraven.info, DNS:gregraven.info
-Issuer:   Let's Encrypt Authority X3
+<p>Subject:  <em>.gregraven.info
+Altnames: DNS:</em>.gregraven.info, DNS:gregraven.info
+Issuer:   Let's Encrypt Authority X3</p>
 
-Not valid before: Nov 18 00:07:05 2020 GMT
-Not valid after:  Feb 16 00:07:05 2021 GMT
+<p>Not valid before: Nov 18 00:07:05 2020 GMT
+Not valid after:  Feb 16 00:07:05 2021 GMT</p>
 
 | --------------------- www.gregraven.info ---------------------
 Version: 2.0.6-static
-OpenSSL 1.1.1h  22 Sep 2020
+OpenSSL 1.1.1h  22 Sep 2020</p>
 
-Connected to 104.248.60.43
+<p>Connected to 104.248.60.43</p>
 
-Testing SSL server www.gregraven.info on port 443 using SNI name www.gregraven.info
+<p>Testing SSL server www.gregraven.info on port 443 using SNI name www.gregraven.info</p>
 
-  SSL/TLS Protocols:
+<p>SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
 TLSv1.1   disabled
 TLSv1.2   enabled
-TLSv1.3   enabled
+TLSv1.3   enabled</p>
 
-  TLS Fallback SCSV:
-Server supports TLS Fallback SCSV
+<p>TLS Fallback SCSV:
+Server supports TLS Fallback SCSV</p>
 
-  TLS renegotiation:
-Session renegotiation not supported
+<p>TLS renegotiation:
+Session renegotiation not supported</p>
 
-  TLS Compression:
+<p>TLS Compression:
 OpenSSL version does not support compression
-Rebuild with zlib1g-dev package for zlib support
+Rebuild with zlib1g-dev package for zlib support</p>
 
-  Heartbleed:
+<p>Heartbleed:
 TLSv1.3 not vulnerable to heartbleed
-TLSv1.2 not vulnerable to heartbleed
+TLSv1.2 not vulnerable to heartbleed</p>
 
-  Supported Server Cipher(s):
-Preferred TLSv1.3  256 bits  TLS_AES_256_GCM_SHA384        Curve 25519 DHE 253
-Accepted  TLSv1.3  256 bits  TLS_CHACHA20_POLY1305_SHA256  Curve 25519 DHE 253
-Accepted  TLSv1.3  128 bits  TLS_AES_128_GCM_SHA256        Curve 25519 DHE 253
+<p>Supported Server Cipher(s):
+Preferred TLSv1.3  256 bits  TLS<em>AES</em>256<em>GCM</em>SHA384        Curve 25519 DHE 253
+Accepted  TLSv1.3  256 bits  TLS<em>CHACHA20</em>POLY1305<em>SHA256  Curve 25519 DHE 253
+Accepted  TLSv1.3  128 bits  TLS</em>AES<em>128</em>GCM_SHA256        Curve 25519 DHE 253
 Preferred TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  ECDHE-RSA-CHACHA20-POLY1305   Curve 25519 DHE 253
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256   Curve 25519 DHE 253
 Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 2048 bits
 Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256       Curve 25519 DHE 253
-Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 2048 bits</p>
 
-  Server Key Exchange Group(s):
+<p>Server Key Exchange Group(s):
 TLSv1.3  128 bits  secp256r1 (NIST P-256)
 TLSv1.3  192 bits  secp384r1 (NIST P-384)
 TLSv1.3  260 bits  secp521r1 (NIST P-521)
@@ -705,34 +657,47 @@ TLSv1.2  128 bits  secp256r1 (NIST P-256)
 TLSv1.2  192 bits  secp384r1 (NIST P-384)
 TLSv1.2  260 bits  secp521r1 (NIST P-521)
 TLSv1.2  128 bits  x25519
-TLSv1.2  224 bits  x448
+TLSv1.2  224 bits  x448</p>
 
-  Server Signature Algorithm(s):
-TLSv1.3  rsa_pss_rsae_sha256
-TLSv1.3  rsa_pss_rsae_sha384
-TLSv1.3  rsa_pss_rsae_sha512
-TLSv1.2  rsa_pkcs1_sha224
-TLSv1.2  rsa_pkcs1_sha256
-TLSv1.2  rsa_pkcs1_sha384
-TLSv1.2  rsa_pkcs1_sha512
-TLSv1.2  rsa_pss_rsae_sha256
-TLSv1.2  rsa_pss_rsae_sha384
-TLSv1.2  rsa_pss_rsae_sha512
+<p>Server Signature Algorithm(s):
+TLSv1.3  rsa<em>pss</em>rsae<em>sha256
+TLSv1.3  rsa</em>pss<em>rsae</em>sha384
+TLSv1.3  rsa<em>pss</em>rsae<em>sha512
+TLSv1.2  rsa</em>pkcs1<em>sha224
+TLSv1.2  rsa</em>pkcs1<em>sha256
+TLSv1.2  rsa</em>pkcs1<em>sha384
+TLSv1.2  rsa</em>pkcs1<em>sha512
+TLSv1.2  rsa</em>pss<em>rsae</em>sha256
+TLSv1.2  rsa<em>pss</em>rsae<em>sha384
+TLSv1.2  rsa</em>pss<em>rsae</em>sha512</p>
 
-  SSL Certificate:
+<p>SSL Certificate:
 Signature Algorithm: sha256WithRSAEncryption
-RSA Key Strength:    2048
+RSA Key Strength:    2048</p>
 
-Subject:  *.gregraven.info
-Altnames: DNS:*.gregraven.info, DNS:gregraven.info
-Issuer:   Let's Encrypt Authority X3
+<p>Subject:  <em>.gregraven.info
+Altnames: DNS:</em>.gregraven.info, DNS:gregraven.info
+Issuer:   Let's Encrypt Authority X3</p>
 
-Not valid before: Nov 18 00:07:05 2020 GMT
+<p>Not valid before: Nov 18 00:07:05 2020 GMT
 Not valid after:  Feb 16 00:07:05 2021 GMT
 Saving session...
 ...copying shared history...
 ...saving history...truncating history files...
-...completed.
+...completed.</p>
 
-[Process completed]
-```
+<p>[Process completed]
+</code></pre>
+<!-- #bbinclude "footer.incl" -->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	</body>
+</html>
+<!-- end bbinclude -->
