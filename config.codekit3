@@ -79,11 +79,11 @@
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
+      "mi" : 0,
+      "oA" : 1,
       "oAP" : "\/_assets\/jTOC\/jtoc-min.js",
-      "oF" : 0,
-      "sC" : 3,
+      "oF" : 1,
+      "sC" : 0,
       "tS" : 0
     },
     "\/_assets\/siteicons\/android-chrome-192x192.png" : {
@@ -335,7 +335,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 645800015.26793599,
-    "displayValue" : "netlify-pilot-build",
+    "displayValue" : "grus-build",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/_assets\/siteicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
